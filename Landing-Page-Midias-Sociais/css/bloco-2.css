@@ -1,22 +1,29 @@
 .bloco-2{
     background-color: #f1f1f1;
-    background-image: url("../imgs/bg-wave.png");
+    background-image: url("../imgs/wave.png");
     background-position: bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: 3000px 300px;
+    background-repeat:repeat-x;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     padding-top: 60px;
+    padding-left: 10vw;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate{
+    0%{background-position-x: 0;}
+    100%{background-position-x: 3000px;}
 }
 
 .bloco-2 .coluna-1 .contato{
     background-color: #d7d7d7;
     box-shadow: 0 0 25px -12px;
     border-radius: 25px;
-    width: 520px;
+    width: auto;
     float: right;
     padding: 35px;
-    margin-right: 10%;
+    margin-right: 15%;
 }
 
 .bloco-2 .coluna-1 .contato h1{
@@ -150,6 +157,7 @@
 @media only screen and (max-width: 1170px) {
     .bloco-2{
         grid-template-columns: 100%;
+        padding-left: 0;
     }
 
     .bloco-2 .coluna-1 .contato{
@@ -171,6 +179,8 @@
 @media only screen and (max-width: 560px) {
     .bloco-2{
         padding-top: 25px;
+        padding-left: 0;
+        background-image: none;
     }
     .bloco-2 .coluna-1 .contato{
         background-color: transparent;
