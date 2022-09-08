@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bloco-1{
+    background-color: #040912;
+    background-image: url('../imgs/bg-1.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding: 90px 0 5vh 10vw;
+    color: #fff; 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow-x: hidden;
+}
+
+.coluna-1 img{
+    width: 260px;
+}
+
+.coluna-1 h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.coluna-1 h1 a{
+    color: #FE7F1E;
+}
+
+.coluna-1 h2{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 25px;
+    line-height: 20px;
+}
+
+.coluna-1 h2 a{
+    color: #FFB900;
+}
+
+.coluna-1 #contato-1, .coluna-1 #contato-2{
+    background-color: #003444;
+    color: #FFB900;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 17px 30px 20px 30px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 50px;
+    transition: 0.2s;
+}
+
+.coluna-1 #contato-1 img{
+    width: fit-content;
+    transform: translateY(5px);
+}
+
+.coluna-1 #contato-1:hover, .coluna-1 #contato-2:hover{
+    background-color: #084659;
+}
+
+.coluna-1 #contato-2{
+    display: none;
+}
+
+.coluna-2 img{
+    width: 110%;
+    margin-top: 15vh;
+    transform: translateX(-12%);
+    float: right;
+}
+
+@media only screen and (max-width: 1530px) {
+    .bloco-1{
+        background-size: 50%;
+    }
+
+    .coluna-1 h1{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        max-width: 460px;
+    }
+
+    .coluna-2 img{
+        width: 100%;
+        transform: translateX(0%);
+        padding-right: 5%;
+        margin-top: 25vh;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .bloco-1{
+        grid-template-columns: 100%;
+        background-size: 60%;
+    }
+
+    .coluna-2 img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .bloco-1{
+        background-image: none;
+        padding: 90px 10vw 5vh 10vw;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .bloco-1{
+        padding: 5vh 10vw 5vh 10vw;
+    }
+
+    .coluna-1 img{
+        width: 180px;
+    }
+
+    .coluna-1 h1{
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        max-width: 360px;
+    }
+
+    .coluna-1 #contato-1{
+        display: none;
+    }
+
+    .coluna-1 #contato-2{
+        display:inline-block;
+        font-size: 16px;
+    }
+}
