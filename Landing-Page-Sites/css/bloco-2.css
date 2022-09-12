@@ -1,0 +1,219 @@
+.bloco-2{
+    background-color: #f1f1f1;
+    background-image: url("../imgs/wave.png");
+    background-position: bottom;
+    background-size: 3000px 300px;
+    background-repeat:repeat-x;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-top: 60px;
+    padding-left: 10vw;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate{
+    0%{background-position-x: 0;}
+    100%{background-position-x: 3000px;}
+}
+
+.bloco-2 .coluna-1 .contato{
+    background-color: #d7d7d7;
+    box-shadow: 0 0 25px -12px;
+    border-radius: 25px;
+    width: auto;
+    float: right;
+    padding: 35px;
+    margin-right: 15%;
+}
+
+.bloco-2 .coluna-1 .contato h1{
+    text-transform: uppercase;
+    color: #003444;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+.bloco-2 .coluna-1 .contato form input{
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    border: 0;
+    border-radius: 10px;
+    padding-left: 20px;
+    color: #003444;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.bloco-2 .coluna-1 .contato form textarea{
+    width: 100%;
+    margin: 15px 0;
+    border: 0;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+    resize: none;
+    color: #003444;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.bloco-2 .coluna-1 .contato form select{
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    border: 0;
+    border-radius: 10px;
+    padding-left: 20px;
+    color: #003444;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.bloco-2 .coluna-1 .contato form select option{
+    color: #003444;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0;
+}
+
+.bloco-2 .coluna-1 .contato form select option[value=""][disabled] {
+    display: none;
+  }
+
+.bloco-2 .coluna-1 .contato form input::placeholder, .bloco-2 .coluna-1 .contato form textarea::placeholder{
+    color: #003444;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bloco-2 .coluna-1 .contato form input:focus, .bloco-2 .coluna-1 .contato form textarea:focus, .bloco-2 .coluna-1 .contato form select:focus{
+    outline: none;
+}
+
+.bloco-2 .coluna-1 .contato form button{
+    width: 100%;
+    text-transform: uppercase;
+    color: #003444;
+    background-color: #00DE00;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.bloco-2 .coluna-2{
+    width: 70%;
+}
+
+.bloco-2 .coluna-2 h1{
+    text-transform: uppercase;
+    color: #003444;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.bloco-2 .coluna-2 a img{
+    transition: 0.2s;
+}
+
+.bloco-2 .coluna-2 a img:hover{
+    transform: scale(1.1);
+}
+
+.bloco-2 .coluna-2 h2{
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #003444;
+    margin-top: 45px;
+}
+
+.bloco-2 .coluna-2 h2 a{
+    color: #FF0646;
+}
+
+.bloco-2 .coluna-2 p{
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #003444;
+    width: 80%;
+}
+
+@media only screen and (max-width: 1530px) {
+    .bloco-2 .coluna-1 .contato{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .bloco-2{
+        grid-template-columns: 100%;
+        padding-left: 0;
+    }
+
+    .bloco-2 .coluna-1 .contato{
+        width: auto;
+        float: left;
+        padding: 35px;
+        margin: 0 10vw;
+    }
+
+    .bloco-2 .coluna-2{
+        margin: 60px 10vw 0 10vw;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .bloco-2{
+        padding-top: 25px;
+        padding-left: 0;
+        background-image: none;
+    }
+    .bloco-2 .coluna-1 .contato{
+        background-color: transparent;
+        box-shadow: 0 0 0 0;
+        width: auto;
+        float: left;
+        padding: 5px;
+        margin: 0 5vw;
+    }
+
+    .bloco-2 .coluna-1 .contato h1{
+        font-size: 1.3em;
+    }
+
+    .bloco-2 .coluna-1 .contato form input, .bloco-2 .coluna-1 .contato form select, .bloco-2 .coluna-1 .contato form textarea{
+        box-shadow: 0 0 10px -5px;
+    }
+
+    .bloco-2 .coluna-2{
+        margin: 40px 5vw 0 5vw;
+        width: auto;
+    }
+
+    .bloco-2 .coluna-2 h1{
+        font-size: 1.3em;
+    }
+
+    .bloco-2 .coluna-2 a img{
+        width: 280px;
+    }
+
+    .bloco-2 .coluna-2 h2{
+        font-size: 1.3em;
+    }
+
+    .bloco-2 .coluna-2 a{
+        font-size: 1.3em;
+    }
+}

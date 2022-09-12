@@ -1,0 +1,75 @@
+.bloco-3{
+    background-color: #D9DCDD;
+    padding: 60px 10vw 0 10vw;
+}
+
+.bloco-3 h1{
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FF0646;
+    letter-spacing: 2px;
+}
+
+.bloco-3 .grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-top: 35px;
+    text-align: center;
+    color: #003444;
+}
+
+.bloco-3 .grid .coluna h2{
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 4% 0;
+}
+
+.bloco-3 .grid .coluna p{
+    font-weight: 500;
+    max-width: 300px;
+    margin: auto;
+}
+
+.bloco-3 .contato{
+    text-align: center;
+}
+
+.bloco-3 .contato a{
+    color: #003444;
+    background-color: #00DE00;
+    padding: 10px 40px;
+    display:inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin: 30px;
+    transition: 0.2s;
+}
+
+.bloco-3 .contato a:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1170px) {
+    .bloco-3 .grid{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .bloco-3 h1{
+        font-size: 1.5em;
+        letter-spacing: 0;
+    }
+
+    .bloco-3 .grid{
+        grid-template-columns: 100%;
+    }
+
+    .bloco-3 .grid .coluna{
+        margin-bottom: 35px;
+    }
+}

@@ -17,11 +17,11 @@
     overflow-x: hidden;
 }
 
-.coluna-1 img{
+.bloco-1 .coluna-1 img{
     width: 260px;
 }
 
-.coluna-1 h1{
+.bloco-1 .coluna-1 h1{
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 900;
@@ -29,22 +29,22 @@
     margin-top: 20px;
 }
 
-.coluna-1 h1 a{
+.bloco-1 .coluna-1 h1 a{
     color: #FE7F1E;
 }
 
-.coluna-1 h2{
+.bloco-1 .coluna-1 h2{
     font-size: 16px;
     font-weight: 400;
     margin-top: 25px;
     line-height: 20px;
 }
 
-.coluna-1 h2 a{
+.bloco-1 .coluna-1 h2 a{
     color: #FFB900;
 }
 
-.coluna-1 #contato-1, .coluna-1 #contato-2{
+.bloco-1 .coluna-1 #contato-1, .bloco-1 .coluna-1 #contato-2{
     background-color: #003444;
     color: #FFB900;
     font-size: 18px;
@@ -59,20 +59,20 @@
     transition: 0.2s;
 }
 
-.coluna-1 #contato-1 img{
+.bloco-1 .coluna-1 #contato-1 img{
     width: fit-content;
     transform: translateY(5px);
 }
 
-.coluna-1 #contato-1:hover, .coluna-1 #contato-2:hover{
+.bloco-1 .coluna-1 #contato-1:hover, .bloco-1 .coluna-1 #contato-2:hover{
     background-color: #084659;
 }
 
-.coluna-1 #contato-2{
+.bloco-1 .coluna-1 #contato-2{
     display: none;
 }
 
-.coluna-2 img{
+.bloco-1 .coluna-2 img{
     width: 110%;
     margin-top: 15vh;
     transform: translateX(-12%);
@@ -84,7 +84,7 @@
         background-size: 50%;
     }
 
-    .coluna-1 h1{
+    .bloco-1 .coluna-1 h1{
         font-size: 30px;
         text-transform: uppercase;
         font-weight: 900;
@@ -93,7 +93,7 @@
         max-width: 460px;
     }
 
-    .coluna-2 img{
+    .bloco-1 .coluna-2 img{
         width: 100%;
         transform: translateX(0%);
         padding-right: 5%;
@@ -107,7 +107,7 @@
         background-size: 60%;
     }
 
-    .coluna-2 img{
+    .bloco-1 .coluna-2 img{
         display: none;
     }
 }
@@ -124,11 +124,11 @@
         padding: 5vh 10vw 5vh 10vw;
     }
 
-    .coluna-1 img{
+    .bloco-1 .coluna-1 img{
         width: 180px;
     }
 
-    .coluna-1 h1{
+    .bloco-1 .coluna-1 h1{
         font-size: 22px;
         text-transform: uppercase;
         font-weight: 900;
@@ -137,11 +137,11 @@
         max-width: 360px;
     }
 
-    .coluna-1 #contato-1{
+    .bloco-1 .coluna-1 #contato-1{
         display: none;
     }
 
-    .coluna-1 #contato-2{
+    .bloco-1 .coluna-1 #contato-2{
         display:inline-block;
         font-size: 16px;
     }
