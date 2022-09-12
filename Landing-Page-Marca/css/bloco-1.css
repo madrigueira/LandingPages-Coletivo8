@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bloco-1{
+    background-image: url('../imgs/bg-1.png');
+    background-position: right;
+    background-size: auto 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+.bloco-1 .coluna-1{
+    background-color: #040912;
+    border-radius: 0px 50% 50% 0px;
+    height: 120%;
+    margin-top: -7.5%;
+    padding-top: 7.5%;
+    padding-left: 10vw;
+}
+
+.bloco-1 .coluna-1 #logo{
+    width: 280px;
+    margin-top: 8%;
+}
+
+.bloco-1 .coluna-1 h1{
+    font-size: 2.8em;
+    font-weight: 900;
+    margin-top: 30px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.bloco-1 .coluna-1 h1 a{
+    color: #FFB900;
+}
+
+.bloco-1 .coluna-1 p{
+    color: #fff;
+    font-weight: 500;
+    width: 85%;
+    margin-top: 30px;
+}
+
+.bloco-1 .coluna-1 p a{
+    color: #FFB900;
+}
+
+.bloco-1 .coluna-1 #contato{
+    background-color: #FE7F1E;
+    display: inline-block;
+    padding: 12px 20px 15px 20px;
+    font-size: 1em;
+    margin-top: 40px;
+    font-style: italic;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 60px;
+}
+
+.bloco-1 .coluna-1 #contato:hover{
+    transform: scale(1.1);
+}
+
+.bloco-1 .coluna-1 #contato img{
+    margin-bottom: -10px;
+    filter: brightness(0);
+    width: 35px;
+}
