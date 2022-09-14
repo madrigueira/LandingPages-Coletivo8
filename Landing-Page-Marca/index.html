@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bloco-1.css">
     <link rel="stylesheet" href="css/bloco-2.css">
+    <link rel="stylesheet" href="css/bloco-3.css">
     <title>Landing Pages - Marcas</title>
 </head>
 <body>
@@ -84,6 +85,25 @@
         </div>
     </div>
 
+    <!-- BLOCO 3 -->
+    <div class="bloco-3">
+        <h1>Você não está sozinho! entre em contato<br><a>queremos ajudar em seu projeto.</a></h1>
+        <form action="https://formsubmit.co/contato@coletivo8.com.br" method="POST">
+            <input type="text" name="name" placeholder="nome" required>
+            <input type="email" name="email" placeholder="e-mail" required>
+            <input type="tel" name="tel" placeholder="whatsapp" required>
+            <select name="tamanho-empresa">
+                <option value="" disabled selected>Qual o tamanho da sua empresa?</option>
+                <option value="grande">Grande</option>
+                <option value="media">Média</option>
+                <option value="pequena">Pequena</option>
+            </select>
+            <textarea name="mensagem" placeholder="nos fale um pouco sobre o que você precisa" cols="0" rows="10"></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/Landing-Page-Midias-Sociais/">
+            <button type="submit">enviar</button>
+        </form>
+    </div>
 
 
     <!-- TAMANHOS MEDIA ONLY: 1530PX  1170PX  880PX  560PX -->

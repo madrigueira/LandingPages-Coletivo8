@@ -133,4 +133,13 @@
     .bloco-1 .coluna-1 p{
         font-size: 16px;
     }
+
+    .bloco-1 .coluna-1 #contato{
+        padding: 12px 1px 12px 15px;
+        font-size: 1em;
+    }
+
+    .bloco-1 .coluna-1 #contato img{
+        display: none;
+    }
 }
