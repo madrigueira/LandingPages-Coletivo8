@@ -1,0 +1,71 @@
+.bloco-4{
+    background-color: #040912;
+    padding: 3vh 10vw;
+}
+
+.bloco-4 h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.7em;
+    letter-spacing: 2px;
+}
+
+.bloco-4 .swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 35px;
+  }
+
+.bloco-4 .swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.bloco-4 .swiper .swiper-button-next, .bloco-4 .swiper .swiper-button-prev{
+    filter: brightness(0) saturate(100%) invert(50%) sepia(93%) saturate(906%) hue-rotate(346deg) brightness(101%) contrast(99%);;
+}
+
+.bloco-4 a{
+    display: inline-flex;
+    color: #003444;
+    background-color: #00DE00;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.bloco-4 #contato-2{
+    display: none;
+}
+
+@media only screen and (max-width: 560px) {
+    .bloco-4 #contato-1{
+        display: none;
+    }
+
+    .bloco-4 #contato-2{
+        display: inline-block;
+    }
+}

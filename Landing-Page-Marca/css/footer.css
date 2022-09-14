@@ -1,0 +1,100 @@
+footer{
+    background-color: #0A1120;
+    padding: 5% 15vw 2% 15vw;
+    display: flex;
+}
+
+footer #logo{
+    width: 15%;
+    height: fit-content;
+    min-width: 150px;
+}
+
+footer .info{
+    color: #fff;
+    padding-left: 5%;
+}
+
+footer .info a{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+footer .info a img{
+    margin-bottom: -8px;
+    margin-right: -5px;
+}
+
+footer .redes{
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+}
+
+footer .redes a{
+    margin-left: 30px;
+    height: fit-content;
+}
+
+footer .redes a:hover img{
+    transform: scale(1.1);
+}
+
+footer .redes a img{
+    width: 25px;
+    transition: 0.2s;
+}
+
+.copyright{
+    background-color: #0A1120;
+    padding: 25px 0;
+}
+
+.copyright h1{
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright h1 a{
+    color: #FFB900;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.copyright h1 a:hover{
+    color: #FE7F1E;
+}
+
+
+@media only screen and (max-width: 880px) {
+    footer{
+        display: block;
+        padding: 5% 10vw 2% 10vw;
+    }
+
+    footer #logo{
+        width: 25%;
+    }
+
+    footer .info{
+        padding-left: 0%;
+        padding-top: 25px;
+    }
+
+    footer .redes{
+        padding: 0;
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+    }
+
+    footer .redes a{
+        margin-left: 0px;
+    }
+
+    .copyright{
+        padding: 45px 0 25px 0;
+    }
+}
