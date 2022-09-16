@@ -65,6 +65,8 @@
     cursor: pointer;
     transition: 0.2s;
     margin-bottom: 60px;
+    text-decoration: none;
+    color: #040912;
 }
 
 .bloco-1 .coluna-1 #contato:hover{
