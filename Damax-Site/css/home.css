@@ -1,0 +1,86 @@
+.bloco-1{
+    background:linear-gradient(0deg, rgba(0, 255, 191, 0.3), rgba(240, 240, 240, 1)), url('../imgs/bg-1.png');
+    background-size: cover;
+    box-shadow: 0 20px 20px -20px;
+}
+
+.bloco-1 .container{
+    display: flex;
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.bloco-1 .container img{
+    width: 80%;
+    padding-top: 8%;
+    margin-left: -10%;
+    margin-bottom: -4%;
+}
+
+.bloco-1 .container div{
+    margin: auto;
+    transform: translateY(-25%);
+}
+
+.bloco-1 .container div p{
+    font-size: 18px;
+    color: #111E30;
+}
+
+.bloco-1 .container div a{
+    background-color: #00901D;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 9px 35px;
+    border-radius: 50px;
+    display: inline-flex;
+    margin-top: 25px;
+    transition: 0.2s;
+}
+
+.bloco-1 .container div a:hover{
+    background-color: #00AE0C;
+}
+
+/*  medias  */
+@media only screen and (max-width: 1500px) {
+    .bloco-1 .container img{
+        width: 60%;
+        margin-left: 0%;
+    }
+
+    .bloco-1 .container div{
+        transform: translateY(-5%);
+    }
+
+    .bloco-1 .container div a{
+        font-size: 18px;
+        padding: 9px 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bloco-1 .container{
+        display: block;
+    }
+
+    .bloco-1 .container img{
+        width: 100%;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .bloco-1 .container div p{
+        margin-top: 20px;
+    }
+
+    .bloco-1 .container div a{
+        margin-bottom: 20px;
+    }
+}
