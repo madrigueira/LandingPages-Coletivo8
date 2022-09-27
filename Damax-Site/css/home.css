@@ -143,3 +143,80 @@
 .bloco-2 .swiper .swiper-button-next::after{
     display: none;
 }
+
+/*  medias  */
+@media only screen and (max-width: 600px) {
+    .bloco-2 .swiper .swiper-button-next{
+        display: none;
+    }
+}
+
+    /* BLOCO 3 */
+.bloco-3{
+    background-color: #162233;
+}
+
+.bloco-3 .container{
+    max-width: 1250px;
+    padding: 80px 30px;
+    display: flex;
+    margin: auto;
+}
+
+.bloco-3 .container img{
+    width: 30%;
+    align-self: center;
+}
+
+.bloco-3 .container div{
+    padding-left: 8%;
+}
+
+.bloco-3 .container div h5{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bloco-3 .container div p{
+    color: #fff;
+    font-size: 19px;
+    margin-top: 8px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.bloco-3 .container div a{
+    background-color: #FF6600;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 110px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.2s;
+}
+
+.bloco-3 .container div a:hover{
+    background-color: #ff8400;
+}
+
+/* medias */
+@media only screen and (max-width: 850px) {
+    .bloco-3 .container{
+        padding: 30px
+    }
+
+    .bloco-3 .container img{
+        display: none;
+    }
+
+    .bloco-3 .container div{
+        padding-left: 0%;
+        margin-top: 15px;
+    }
+}
