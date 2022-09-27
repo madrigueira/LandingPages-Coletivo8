@@ -220,3 +220,53 @@
         margin-top: 15px;
     }
 }
+
+    /* BLOCO 4 */
+.bloco-4{
+    background-image: url("../imgs/esteira.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 100vw;
+    animation: animate 75s linear infinite;
+}
+
+@keyframes animate{
+    0%{background-position-x: 0;}
+    100%{background-position-x: 100vw;}
+}
+
+.bloco-4 .container{
+    max-width: 1250px;
+    padding: 60px 30px;
+    display: flex;
+    margin: auto;
+}
+
+.bloco-4 .container h1{
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00901D;
+}
+
+.bloco-4 .container p{
+    font-size: 20px;
+    padding-left: 35px;
+}
+
+/* medias */
+@media only screen and (max-width: 850px) {
+    .bloco-4 .container{
+        display: block;
+        padding: 30px;
+    }
+
+    .bloco-4 .container h1{
+        font-size: 36px;
+    }
+
+    .bloco-4 .container p{
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+}
