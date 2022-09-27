@@ -49,6 +49,10 @@ header div ul li a:hover{
     color: #00AE0C !important;
 }
 
+header div ul li a.active{
+    color: #00AE0C !important;
+}
+
 header div button{
     display: none;
     width: 50px;
