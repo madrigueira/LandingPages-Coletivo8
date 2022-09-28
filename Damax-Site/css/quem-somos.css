@@ -5,7 +5,6 @@
     margin: auto;
     max-width: 1250px;
     padding: 30px;
-    overflow: hidden;
 }
 
 .bloco-1 img{
@@ -15,7 +14,6 @@
     border: 10px solid;
     border-image: linear-gradient(var(--angle), #FF5F00, #009729) 1;
     animation: 7s rotate linear infinite;
-    z-index: 1;
 }
 
 @keyframes rotate {
@@ -32,14 +30,6 @@
 .bloco-1 div{
     margin: auto 0 auto 20px;
     color: #111E30;
-    animation: test 1s;
-    animation-delay: .2s;
-    animation-fill-mode: backwards;
-}
-
-@keyframes test {
-    0%{transform: translateX(-110%);}
-    100%{transform: translateX(0%);}
 }
 
 .bloco-1 div h5{
@@ -68,13 +58,4 @@
     .bloco-1 div{
         margin: 0 0 25px 0;
     }
-}
-
-    /* BLOCO2 */
-.bloco-2{
-    height: 480px;
-    background-image: url("../imgs/bg-2.png");
-    background-size: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
 }
