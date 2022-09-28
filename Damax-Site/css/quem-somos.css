@@ -1,0 +1,61 @@
+
+    /* BLOCO 1 */
+.bloco-1{
+    display: flex;
+    margin: auto;
+    max-width: 1250px;
+    padding: 30px;
+}
+
+.bloco-1 img{
+    width: 61%;
+    min-height: 300px;
+    object-fit: cover;
+    border: 10px solid;
+    border-image: linear-gradient(var(--angle), #FF5F00, #009729) 1;
+    animation: 7s rotate linear infinite;
+}
+
+@keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.bloco-1 div{
+    margin: auto 0 auto 20px;
+    color: #111E30;
+}
+
+.bloco-1 div h5{
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bloco-1 div p{
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+/* medias */
+@media only screen and (max-width: 900px) {
+    .bloco-1{
+        flex-direction: column;
+    }
+
+    .bloco-1 img{
+        order: 2;
+        width: 100%;
+    }
+
+    .bloco-1 div{
+        margin: 0 0 25px 0;
+    }
+}
