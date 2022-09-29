@@ -5,6 +5,7 @@
     margin: auto;
     max-width: 1250px;
     padding: 30px;
+    overflow: hidden;
 }
 
 .bloco-1 img{
@@ -14,6 +15,7 @@
     border: 10px solid;
     border-image: linear-gradient(var(--angle), #FF5F00, #009729) 1;
     animation: 7s rotate linear infinite;
+    z-index: 1;
 }
 
 @keyframes rotate {
@@ -30,6 +32,14 @@
 .bloco-1 div{
     margin: auto 0 auto 20px;
     color: #111E30;
+    animation: test 1s;
+    animation-delay: .2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes test {
+    0%{transform: translateX(-110%);}
+    100%{transform: translateX(0%);}
 }
 
 .bloco-1 div h5{
@@ -57,5 +67,100 @@
 
     .bloco-1 div{
         margin: 0 0 25px 0;
+        animation: none;
+    }
+}
+
+    /* BLOCO2 */
+.bloco-2{
+    background-image: url("../imgs/bg-2.png");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: #111E30;
+    padding-bottom: 80px;
+}
+
+.bloco-2 .container{
+    max-width: 1270px;
+    display: flex;
+    margin: auto;
+    padding: 30px;
+}
+
+.bloco-2 .container .card{
+    background-color: #fff;
+    box-shadow: 0 3px 15px -5px;
+    border-radius: 20px;
+    padding: 75px 30px;
+    margin: 0 10px;
+    width: 100%;
+    height: 350px;
+}
+
+.bloco-2 .container .card div{
+    overflow-y:scroll;
+    height: 190px;
+}
+
+.bloco-2 .container .card div::-webkit-scrollbar {
+    display: none;
+}
+
+.bloco-2 .container .card div h5{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.bloco-2 .container .card div p{
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.bloco-2 .container .card button{
+    display: flex;
+    margin: 25px auto 0 auto;
+    text-align: center;
+    cursor: pointer;
+    transform: scale(2, 1);
+    font-size: 18px;
+    background-color: transparent;
+    color: #00901D;
+    transition: 0.25s;
+}
+
+.bloco-2 .container .card button:hover{
+    color: #00AE0C;
+}
+
+.bloco-2 .container .card button.active{
+    transform: scale(2, 1) rotate(180deg);
+}
+
+/*medias*/
+@media only screen and (max-width: 900px) {
+    .bloco-2{
+        background-size: cover;
+        padding-bottom: 0px;
+    }
+
+    .bloco-2 .container{
+        flex-direction: column;
+        transform: translatex(-10px);
+    }
+
+    .bloco-2 .container .card{
+        padding: 30px;
+        height: fit-content;
+        margin-bottom: 35px;
+    }
+
+    .bloco-2 .container .card div{
+        height: fit-content;
+    }
+
+    .bloco-2 .container .card button{
+        display: none;
     }
 }

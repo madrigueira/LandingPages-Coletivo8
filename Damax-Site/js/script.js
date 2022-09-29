@@ -35,3 +35,22 @@ const swiper = new Swiper('.swiper', {
         }
     }
 });
+
+
+// Scroll do Quem Somos - Bloco 2 (meu Deus eu fiquei muito tempo nksso....)
+function toggleScroll(){
+    var card = document.getElementById('card')
+    var btn = document.getElementById('btn-scroll')
+    if(card.scrollTop == 0){
+        card.scroll({
+            top: 1000,
+            behavior: 'smooth'
+        })
+    }else{
+        card.scroll({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+    btn.classList.toggle("active")
+}
