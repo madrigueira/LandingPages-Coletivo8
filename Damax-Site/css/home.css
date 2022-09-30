@@ -97,7 +97,7 @@
     
 .bloco-2 .swiper {
     width: 100%;
-    height: 340px;
+    height: 360px;
     padding: 20px;
 }
 
@@ -109,6 +109,13 @@
     box-shadow: 0 5px 18px -8px;
     border-radius: 30px;
     padding: 0px 30px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+.bloco-2 .swiper .swiper-wrapper .swiper-slide:hover{
+    transform: scale(1.07);
 }
 
 .bloco-2 .swiper .swiper-wrapper .swiper-slide img{
@@ -117,14 +124,14 @@
     width: 50%;
 }
 
-.bloco-2 .swiper .swiper-wrapper .swiper-slide h5{
+.bloco-2 .swiper .swiper-wrapper .swiper-slide div h5{
     font-size: 19px;
     text-transform: uppercase;
     font-weight: 700;
     color: #162233;
 }
 
-.bloco-2 .swiper .swiper-wrapper .swiper-slide p{
+.bloco-2 .swiper .swiper-wrapper .swiper-slide div p{
     color: #162233;
     margin-top: 7px;
 }
@@ -139,7 +146,6 @@
     color: #00AE0C;
 }
 
-
 .bloco-2 .swiper .swiper-button-next::after{
     display: none;
 }
@@ -147,7 +153,7 @@
 /*  medias  */
 @media only screen and (max-width: 600px) {
     .bloco-2 .swiper .swiper-button-next{
-        display: none;
+        transform: translateX(12px) scale(1.5, 3);
     }
 }
 

@@ -19,9 +19,9 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 40,
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 3500,
         disableOnInteraction: false,
-      },
+     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -54,3 +54,10 @@ function toggleScroll(){
     }
     btn.classList.toggle("active")
 }
+
+// Iniciar biblioteca de animações
+AOS.init({
+    offset: 300,
+    once: true,
+    duration: 600,
+});
