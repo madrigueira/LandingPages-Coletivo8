@@ -18,3 +18,125 @@
     font-weight: 700;
     letter-spacing: .5px;
 }
+
+.bloco-1 .container{
+    padding: 30px;
+}
+
+.bloco-1 .container .box{
+    display: flex;
+    margin: auto;
+    max-width: 1250px;
+    padding: 15px;
+}
+
+.bloco-1 .container .box .card{
+    width: 350px;
+    margin: auto;
+    box-shadow: 0 5px 18px -8px;
+    border-radius: 30px;
+    padding: 0 30px 30px 30px;
+    margin: 0 15px;
+}
+
+.bloco-1 .container .box .card img{
+    margin: auto;
+    display: flex;
+    width: 55%;
+}
+
+.bloco-1 .container #box-2 .card div{
+    overflow-y:scroll;
+    height: 185px;
+}
+
+.bloco-1 .container #box-2 .card div::-webkit-scrollbar {
+    display: none;
+}
+
+.bloco-1 .container .box .card div h5{
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #162233;
+}
+
+.bloco-1 .container .box .card div p{
+    color: #162233;
+    margin-top: 7px;
+}
+
+.bloco-1 .container #box-2 .card:nth-child(1){
+    margin-left: auto;
+}
+
+.bloco-1 .container #box-2 .card:nth-child(2){
+    margin-right: auto;
+}
+
+.bloco-1 .container #box-2 .card button{
+    display: flex;
+    margin: 25px auto 0 auto;
+    text-align: center;
+    cursor: pointer;
+    transform: scale(2, 1);
+    font-size: 18px;
+    background-color: transparent;
+    color: #00901D;
+    transition: 0.25s;
+}
+
+.bloco-1 .container #box-2 .card button:hover{
+    color: #00AE0C;
+}
+
+.bloco-1 .container #box-2 .card button.active{
+    transform: scale(2, 1) rotate(180deg);
+}
+
+@media only screen and (max-width: 900px) {
+    .bloco-1 .container .box{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .bloco-1 .container .box .card{
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        margin: 0px;
+        height: auto;
+    }
+
+    .bloco-1 .container .box .card img{
+        margin: auto;
+        display: flex;
+        width: 140px;
+    }
+    
+    .bloco-1 .container .box .card div{
+        margin: auto;
+    }
+
+    .bloco-1 .container #box-2 .card div{
+        height: auto;
+    }
+
+    .bloco-1 .container #box-2 .card button{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .bloco-1 .container .box .card{
+        flex-direction: column;
+    }
+
+    .bloco-1 .container #box-2 .card div{
+        height: 210px;
+    }
+
+    .bloco-1 .container #box-2 .card button{
+        display: block;
+    }
+}

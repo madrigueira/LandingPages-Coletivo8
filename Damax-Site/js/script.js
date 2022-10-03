@@ -12,6 +12,13 @@ function toggleMenu(){
     document.getElementById("menu").classList.toggle("active")
 }
 
+// Iniciar biblioteca de animações
+AOS.init({
+    offset: 200,
+    once: true,
+    duration: 600,
+});
+
 //  Carousel da Home - Bloco 2
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
@@ -55,9 +62,20 @@ function toggleScroll(){
     btn.classList.toggle("active")
 }
 
-// Iniciar biblioteca de animações
-AOS.init({
-    offset: 300,
-    once: true,
-    duration: 600,
-});
+function toggleScroll_2(){
+    var card = document.getElementById('card-2')
+    var btn = document.getElementById('btn-scroll-2')
+    if(card.scrollTop == 0){
+        card.scroll({
+            top: 1000,
+            behavior: 'smooth'
+        })
+    }else{
+        card.scroll({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+    btn.classList.toggle("active")
+}
+
